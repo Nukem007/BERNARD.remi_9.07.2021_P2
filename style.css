@@ -1,8 +1,59 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url('Raleway-VariableFont_wght.ttf') format('truetype'),
+		 url('Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
+	font-weight: normal,
+	font-style: normal;
+}
+
 header
 {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 	flex-wrap: wrap;
-	
+	font-family: Raleway;
+
+}
+
+h1 
+{ font-family: Raleway; font-size: 12px;
+	 font-style: normal;
+	  font-variant: normal;
+	   font-weight: 400;
+	    line-height: 13.2px;
+	 }
+ h3
+ {
+	 font-family: Raleway;
+	  font-size: 14px;
+	   font-style: normal;
+	    font-variant: normal;
+		 font-weight: 700;
+		  line-height: 15.4px;
+ } 
+ p 
+ { font-family: Raleway;
+	 font-size: 14px;
+	  font-style: normal;
+	   font-variant: normal;
+	    font-weight: 400;
+		 line-height: 20px;
+ }
+ 
+ blockquote 
+ { font-family: Raleway;
+	 font-size: 21px;
+	  font-style: normal;
+	   font-variant: normal;
+	    font-weight: 400;
+		 line-height: 30px;
+ }
+ pre 
+ { font-family: Raleway;
+	 font-size: 13px;
+	  font-style: normal;
+	   font-variant: normal;
+	    font-weight: 400;
+		 line-height: 18.5714px; 
 }
