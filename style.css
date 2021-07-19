@@ -1,9 +1,10 @@
 @font-face {
-	font-family: 'Raleway';
+	font-family: 'Raleway', Arial , sans-serif;
 	src: url('Raleway-VariableFont_wght.ttf') format('truetype'),
-		 url('Raleway-Italic-VariableFont_wght.ttf') format('truetype'),
-	font-weight: normal,
+		 url('Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
 	font-style: normal;
+	font-weight: 100;
 }
 
 header
@@ -11,49 +12,81 @@ header
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	flex-wrap: wrap;
-	font-family: Raleway;
+	background-color: none;
+}
 
+#titre_principal
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#logo img
+{
+	height: 49px;
+	/* display: flex;
+	width: 94px;
+	height: auto;	 */
+}
+
+body
+{
+	margin: auto;
+	font-family: 'Raleway', Arial, sans-serif;;
+	background-position: auto;
+	width: 70%;
+	font-size: 0.8em;
+	color: black;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0px;
+}
+header nav
+{
+	display: block;
+}
+nav li
+{
+	padding: 30px 15px 5px 15px;
+	border-top: 2px solid #FFFFFF;
+}
+
+header nav a
+{
+		text-decoration: none;
 }
 
 h1 
-{ font-family: Raleway; font-size: 12px;
-	 font-style: normal;
-	  font-variant: normal;
-	   font-weight: 400;
-	    line-height: 13.2px;
-	 }
- h3
- {
-	 font-family: Raleway;
-	  font-size: 14px;
-	   font-style: normal;
-	    font-variant: normal;
-		 font-weight: 700;
-		  line-height: 15.4px;
- } 
- p 
- { font-family: Raleway;
-	 font-size: 14px;
-	  font-style: normal;
-	   font-variant: normal;
-	    font-weight: 400;
-		 line-height: 20px;
- }
- 
- blockquote 
- { font-family: Raleway;
-	 font-size: 21px;
-	  font-style: normal;
-	   font-variant: normal;
-	    font-weight: 400;
-		 line-height: 30px;
- }
- pre 
- { font-family: Raleway;
-	 font-size: 13px;
-	  font-style: normal;
-	   font-variant: normal;
-	    font-weight: 400;
-		 line-height: 18.5714px; 
+{ 
+	font-family: 'Raleway';
+	 font-size: 1.4em;
+	 font-style: bold;
 }
+  
+ p 
+ { font-family: 'Raleway';
+	 font-size: 1.0em;
+	  font-style: normal;
+	   font-variant: normal;
+ }
+
+.subscription
+{
+	color: #0065FC;
+	font-weight: bold;
+}
+
+ body>header>div>nav>ul>li:hover{
+	border-top: 2px solid #0065FC;
+	display: inline-block;
+	text-align: match-parent;
+	position: static;
+
+ }
