@@ -1,0 +1,535 @@
+@font-face {
+	font-family: 'Raleway', Arial, sans-serif;
+	src        : url('Raleway-VariableFont_wght.ttf') format('truetype'),
+		url('Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style : normal;
+	font-weight: 100;
+}
+
+header {
+	display        : flex;
+	justify-content: space-between;
+	align-items    : flex-end;
+}
+
+#titre_principal {
+	display        : flex;
+	flex-direction : row;
+	justify-content: space-between;
+	width          : 100%;
+}
+
+#logo img {
+	height: 49px;
+}
+
+body {
+	margin     : auto;
+	font-family: 'Raleway', Arial, sans-serif;
+	width      : 70%;
+	font-size  : 0.8rem;
+	color      : black;
+}
+
+nav ul {
+	list-style-type: none;
+	display        : flex;
+	justify-content: flex-end;
+	margin         : 0px;
+}
+
+header nav {
+	display: block;
+}
+
+nav li {
+	padding   : 30px 15px 5px 15px;
+	border-top: 2px solid #FFFFFF;
+}
+
+header nav a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Raleway';
+	font-size  : 1.4rem;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: 'Raleway';
+	font-size  : 1.4rem;
+	font-weight: bold;
+}
+
+p {
+	font-family : 'Raleway';
+	font-size   : 1.0rem;
+	font-weight : normal;
+	font-variant: normal;
+}
+
+.subscription {
+	color      : #0065FC;
+	font-weight: bold;
+}
+
+::selection {
+	color     : #F2F2F2;
+	background: #0065FC;
+}
+
+body>header>div>nav>ul>li:hover {
+	border-top: 2px solid #0065FC;
+}
+
+
+.searchbar {
+	display        : flex;
+	justify-content: start;
+	align-items    : stretch;
+	height         : 50px;
+	width          : 420px;
+	font-weight    : bold;
+	font-size      : 1.4em;
+	padding        : 0px;
+
+}
+
+.butsub {
+	font-family     : "Raleway";
+	font-size       : 1.1rem;
+	align-items     : center;
+	justify-content : stretch;
+	width           : 134px;
+	border-style    : initial;
+	border-radius   : 0 15px 15px 0;
+	background-color: #0065FC;
+	color           : #FFFFFF;
+	font-weight     : bold;
+}
+
+.butsub:hover {
+	background-color: #2079ff;
+}
+
+.searchbar label {
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	width           : 52px;
+	font-size       : 1.1em;
+	background-color: #F2F2F2;
+	border-radius   : 15px 0 0 15px;
+}
+
+input#city {
+	border      : #F2F2F2 solid 2px;
+	border-right: #FFFFFF solid 2px;
+	padding-left: 10px;
+	font-size   : 1.1em;
+}
+
+input#city:focus,
+input#city:active {
+	border : #F2F2F2 solid 2px;
+	outline: none;
+}
+
+.filtres {
+	display        : flex;
+	align-items    : stretch;
+	flex-wrap      : wrap;
+	flex-direction : row;
+	font-size      : 1rem;
+	margin-left    : 0.8em;
+	height         : auto;
+	margin-top     : 1em;
+	margin-bottom  : 1em;
+	align-content  : stretch;
+	flex-direction : row;
+	justify-content: flex-start;
+	align-items    : baseline;
+
+}
+
+.filtres div {
+	display       : flex;
+	align-items   : center;
+	flex-direction: row;
+	margin-left   : 1.5em;
+	margin-bottom : 1em;
+	height        : 3.4em;
+	border        : solid 2px #F2F2F2;
+	border-radius : 2em;
+	padding-left  : 4em;
+	padding-right : 1em;
+}
+
+.filtres label {
+	font-weight: bold;
+	display    : block;
+	z-index    : 1;
+	font-size  : 1.2rem;
+}
+
+.filtres input {
+	opacity : 0;
+	position: absolute;
+}
+
+.filtres div span {
+	position   : absolute;
+	display    : inline-block;
+	color      : #2079ff;
+	z-index    : 1;
+	padding    : 0px;
+	margin-left: -3em;
+	transition : .3s;
+}
+
+.filtres div span i.fa-money-bill-wave {
+	margin-left: 0.35em;
+}
+
+.filtres div span i.fa-child {
+	margin-left: 0.6em;
+}
+
+.filtres div span i.fa-heart {
+	margin-left: 0.5em;
+	margin-top : 0.15em;
+}
+
+.filtres div span i.fa-dog {
+	margin-left: 0.4em;
+}
+
+.filtres label::before {
+	content         : ' ';
+	display         : block;
+	position        : absolute;
+	width           : 3em;
+	height          : 3em;
+	background-color: #e1eaff;
+	border-radius   : 3em;
+	margin-top      : -0.9em;
+	margin-left     : -3.5em;
+	transition      : .3s;
+}
+
+.filtres input:checked+label::before {
+	content         : ' ';
+	display         : block;
+	position        : absolute;
+	width           : 3em;
+	height          : 3em;
+	background-color: #2079ff;
+	border-radius   : 2em;
+	margin-top      : -0.9em;
+	margin-left     : -3.5em;
+
+}
+
+.filtres input:hover+label::before {
+	content         : ' ';
+	display         : block;
+	position        : absolute;
+	width           : 3em;
+	height          : 3em;
+	background-color: #2079ff;
+	border-radius   : 2em;
+	margin-top      : -0.9em;
+	margin-left     : -3.5em;
+
+}
+
+.filtres input:checked+label {
+	color: #2079ff;
+}
+
+.filtres input:checked+label span {
+	color  : #e1eaff;
+	z-index: 999;
+}
+
+.filtres input:hover+label span {
+	color  : #e1eaff;
+	z-index: 999;
+}
+
+/* article section aside */
+article {
+	display  : flex;
+	flex-wrap: wrap;
+	width    : 100%;
+	height   : 1245px;
+}
+
+#hebergement {
+	display         : flex;
+	flex-wrap       : wrap;
+	background-color: #f2f2f2;
+	margin          : 0 1.5% 1.5% 0;
+	padding         : 1.125%;
+	border-radius   : 20px;
+	width           : 61.75%;
+	height          : 626px;
+	align-content   : flex-start;
+}
+
+.heb_card {
+	display        : flex;
+	height         : 80px;
+	flex-direction : column;
+	justify-content: space-around;
+	padding-left   : 0.9rem;
+	padding-top    : 0.5rem;
+	color          : black;
+}
+
+.heb_card_titre {
+	color      : black;
+	font-weight: bold;
+}
+
+.heb_card p {
+	margin : 0%;
+	display: block;
+}
+
+.heb_card_setting_star {
+	color    : #2079ff;
+	font-size: 0.9rem;
+}
+
+#populaires {
+	display         : flex;
+	flex-wrap       : wrap;
+	background-color: #f2f2f2;
+	margin          : 0 0 1.5% 1.5%;
+	padding         : 1.125%;
+	border-radius   : 20px;
+	width           : 27.75%;
+	height          : 625px;
+	align-content   : flex-start;
+}
+
+.titre_hebergement {
+	display        : flex;
+	justify-content: left;
+	width          : 100%;
+	margin-left    : 20px;
+}
+
+.start_end {
+	display        : flex;
+	justify-content: space-between;
+	width          : 100%;
+
+}
+
+.afficher_plus {
+	display      : flex;
+	width        : 100%;
+	font-size    : 1.1rem;
+	font-weight  : bold;
+	margin-left  : 20px;
+	height       : 90px;
+	align-content: center;
+	align-items  : center;
+}
+
+.afficher_plus>span {
+	cursor: pointer;
+}
+
+#hebergement a {
+	display         : flex;
+	flex-flow       : column;
+	flex-wrap       : nowrap;
+	width           : 28%;
+	height          : 200px;
+	background-color: #FFFFFF;
+	border-radius   : 20px;
+	padding         : 5px;
+	text-decoration : underline #FFFFFF;
+	margin          : auto;
+	margin-top      : 14.6px;
+	margin-bottom   : 14.6px;
+}
+
+#populaires a {
+	display         : flex;
+	width           : 343px;
+	height          : 144px;
+	background-color: #FFFFFF;
+	border-radius   : 20px;
+	padding         : 5px;
+	flex-direction  : row;
+	justify-content : space-between;
+	text-decoration : underline #FFFFFF;
+	margin          : auto;
+	margin-top      : 14.6px;
+	margin-bottom   : 14.6px;
+}
+
+.pop_card {
+	display        : flex;
+	width          : 190px;
+	height         : 144px;
+	flex-direction : column;
+	justify-content: space-around;
+	color          : black;
+}
+
+.pop_card p {
+	margin: 0%;
+	width : 139px;
+}
+
+.card_titre_populaire {
+	padding-top: 1em;
+	font-weight: bold;
+}
+
+.tarif {
+	font-size  : 0.9rem;
+	padding-top: 0.3rem;
+}
+
+.setting_star {
+	display       : flex;
+	color         : #2079ff;
+	font-size     : inherit;
+	flex          : 1;
+	align-items   : flex-end;
+	padding-bottom: 1em;
+}
+
+aside>a>img {
+	box-sizing   : content-box;
+	width        : 127px;
+	margin       : 0%;
+	border-radius: 20px 0 0 20px;
+	object-fit   : cover;
+}
+
+#hebergement img {
+	box-sizing   : content-box;
+	height       : 115px;
+	margin       : 0%;
+	border-radius: 20px 20px 0 0;
+	object-fit   : cover;
+}
+
+a>p {
+	margin: 0%;
+}
+
+.euro {
+	font-weight: bold;
+	margin     : 0%;
+	padding    : 0%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+#activites {
+	width: 97%;
+}
+
+#activites a {
+	width        : 302px;
+	box-shadow   : 0 0 20px #f2f2f2;
+	border-radius: 20px;
+}
+ /* p est le fils a */
+#activites a:hover p{
+	color: white;
+	background-color: #2079ff;
+	transition: 0.3s;
+}
+
+#activites img {
+	margin       : 0%;
+	padding      : 0%;
+	border-radius: 20px;
+	object-fit   : cover;
+	height       : 100%;
+	width        : 302px;
+}
+
+.acti_titre {
+	width: 97%;
+}
+#activites a{
+	text-decoration: none;
+
+}
+.multi_size_box {
+	display        : flex;
+	flex-direction : column;
+	flex-wrap      : wrap;
+	height         : 444px;
+	align-content  : space-between;
+	justify-content: space-between;
+}
+
+#activites p {
+	height: 55px;
+    position: relative;
+    width: 282px;
+    text-align: left;
+    top: -57px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.acti_card_1 {
+	height: 444px;
+}
+
+.acti_card_2 {
+	height: 236px;
+}
+
+.acti_card_3 {
+	height: 164px;
+}
+
+.acti_card_4 {
+	height: 444px;
+}
+
+.acti_card_5 {
+	height: 194px;
+}
+
+.acti_card_6 {
+	height: 209px;
+}
+
+
+footer {
+	margin-top: 15px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	#hebergement {
+		width: 100%;
+	}
+}
