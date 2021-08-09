@@ -17,11 +17,18 @@ header {
 	display        : flex;
 	flex-direction : row;
 	justify-content: space-between;
-	width          : 100%;
+	width          : 1310px;
+	padding-left   : 54px;
+	height         : 69px;
+	align-items    : center;
 }
 
 #logo img {
-	height: 49px;
+	height     : 30px;
+	padding-top: 70px;
+	width      : 95px;
+	box-sizing : content-box;
+	object-fit : cover;
 }
 
 body {
@@ -44,8 +51,13 @@ header nav {
 }
 
 nav li {
-	padding   : 30px 15px 5px 15px;
+	padding   : 45px 15px 5px 15px;
 	border-top: 2px solid #FFFFFF;
+}
+
+nav li a {
+	color    : black;
+	font-size: 0.9rem;
 }
 
 header nav a {
@@ -56,6 +68,7 @@ h1 {
 	font-family: 'Raleway';
 	font-size  : 1.4rem;
 	font-weight: bold;
+	margin-top : 55px;
 }
 
 h2 {
@@ -69,6 +82,22 @@ p {
 	font-size   : 1.0rem;
 	font-weight : normal;
 	font-variant: normal;
+}
+
+.info {
+	display       : inline-block;
+	border        : solid 2px #F2F2F2;
+	border-radius : 51%;
+	color         : #0065FC;
+	font-size     : 1rem;
+	margin-right  : 1rem;
+	margin-left   : 1rem;
+	width         : 1rem;
+	height        : 1rem;
+	padding-left  : 10px;
+	padding-bottom: 6px;
+	padding-top   : 3px;
+	cursor        : pointer;
 }
 
 .subscription {
@@ -85,12 +114,15 @@ body>header>div>nav>ul>li:hover {
 	border-top: 2px solid #0065FC;
 }
 
+body>header>div>nav>ul>li:hover a {
+	color: #0065FC;
+}
 
 .searchbar {
 	display        : flex;
 	justify-content: start;
 	align-items    : stretch;
-	height         : 50px;
+	height         : 51px;
 	width          : 420px;
 	font-weight    : bold;
 	font-size      : 1.4em;
@@ -101,8 +133,6 @@ body>header>div>nav>ul>li:hover {
 .butsub {
 	font-family     : "Raleway";
 	font-size       : 1.1rem;
-	align-items     : center;
-	justify-content : stretch;
 	width           : 134px;
 	border-style    : initial;
 	border-radius   : 0 15px 15px 0;
@@ -119,10 +149,12 @@ body>header>div>nav>ul>li:hover {
 	display         : flex;
 	justify-content : center;
 	align-items     : center;
-	width           : 52px;
-	font-size       : 1.1em;
+	width           : 51px;
+	font-size       : 1em;
 	background-color: #F2F2F2;
 	border-radius   : 15px 0 0 15px;
+	padding-left    : 2px;
+	padding-bottom  : 2px;
 }
 
 input#city {
@@ -130,6 +162,7 @@ input#city {
 	border-right: #FFFFFF solid 2px;
 	padding-left: 10px;
 	font-size   : 1.1em;
+	font-weight : bold;
 }
 
 input#city:focus,
@@ -159,13 +192,13 @@ input#city:active {
 	display       : flex;
 	align-items   : center;
 	flex-direction: row;
-	margin-left   : 1.5em;
-	margin-bottom : 1em;
-	height        : 3.4em;
+	margin-left   : 24px;
+	margin-bottom : 16px;
+	height        : 50px;
 	border        : solid 2px #F2F2F2;
-	border-radius : 2em;
-	padding-left  : 4em;
-	padding-right : 1em;
+	border-radius : 30px;
+	padding-left  : 64px;
+	padding-right : 16px;
 }
 
 .filtres label {
@@ -211,12 +244,12 @@ input#city:active {
 	content         : ' ';
 	display         : block;
 	position        : absolute;
-	width           : 3em;
-	height          : 3em;
+	width           : 53px;
+	height          : 53px;
 	background-color: #e1eaff;
-	border-radius   : 3em;
-	margin-top      : -0.9em;
-	margin-left     : -3.5em;
+	border-radius   : 30px;
+	margin-top      : -15px;
+	margin-left     : -65px;
 	transition      : .3s;
 }
 
@@ -224,25 +257,24 @@ input#city:active {
 	content         : ' ';
 	display         : block;
 	position        : absolute;
-	width           : 3em;
-	height          : 3em;
+	width           : 53px;
+	height          : 53px;
 	background-color: #2079ff;
-	border-radius   : 2em;
-	margin-top      : -0.9em;
-	margin-left     : -3.5em;
-
+	border-radius   : 30px;
+	margin-top      : -15px;
+	margin-left     : -65px;
 }
 
 .filtres input:hover+label::before {
 	content         : ' ';
 	display         : block;
 	position        : absolute;
-	width           : 3em;
-	height          : 3em;
+	width           : 53px;
+	height          : 53px;
 	background-color: #2079ff;
-	border-radius   : 2em;
-	margin-top      : -0.9em;
-	margin-left     : -3.5em;
+	border-radius   : 30px;
+	margin-top      : -15px;
+	margin-left     : -65px;
 
 }
 
@@ -262,10 +294,11 @@ input#city:active {
 
 /* article section aside */
 article {
-	display  : flex;
-	flex-wrap: wrap;
-	width    : 100%;
-	height   : 1245px;
+	display   : flex;
+	flex-wrap : wrap;
+	width     : 1340px;
+	height    : 1245px;
+	margin-top: 22px;
 }
 
 #hebergement {
@@ -327,8 +360,7 @@ article {
 .start_end {
 	display        : flex;
 	justify-content: space-between;
-	width          : 100%;
-
+	width          : 343px;
 }
 
 .afficher_plus {
@@ -359,6 +391,7 @@ article {
 	margin          : auto;
 	margin-top      : 14.6px;
 	margin-bottom   : 14.6px;
+	box-shadow      : 0 0 10px #00000021;
 }
 
 #populaires a {
@@ -415,6 +448,18 @@ aside>a>img {
 	margin       : 0%;
 	border-radius: 20px 0 0 20px;
 	object-fit   : cover;
+	transition   : 0.6s;
+	padding-left : 1px;
+}
+
+aside>a:hover img {
+	width     : 180px;
+	transition: 0.6s;
+}
+
+aside>a:hover .pop_card {
+	width     : 135px;
+	transition: 0.6s;
 }
 
 #hebergement img {
@@ -445,14 +490,17 @@ a>p {
 
 #activites a {
 	width        : 302px;
-	box-shadow   : 0 0 20px #f2f2f2;
+	box-shadow   : 0 0 20px #dcdcdc;
 	border-radius: 20px;
+	transition   : 0.5s;
 }
- /* p est le fils a */
-#activites a:hover p{
-	color: white;
-	background-color: #2079ff;
-	transition: 0.3s;
+  
+/* p est le fils a */
+#activites a:hover p {
+	color           : white;
+	font-size       : 1.2rem;
+	background-color: #2079ff00;
+	transition      : 0.5s;
 }
 
 #activites img {
@@ -467,10 +515,12 @@ a>p {
 .acti_titre {
 	width: 97%;
 }
-#activites a{
+
+#activites a {
 	text-decoration: none;
 
 }
+
 .multi_size_box {
 	display        : flex;
 	flex-direction : column;
@@ -481,20 +531,20 @@ a>p {
 }
 
 #activites p {
-	height: 55px;
-    position: relative;
-    width: 282px;
-    text-align: left;
-    top: -57px;
-    background-color: white;
-    border-radius: 0 0 20px 20px;
-    display: flex;
-    font-weight: bold;
-    color: black;
-    padding-left: 20px;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
+	height          : 55px;
+	position        : relative;
+	width           : 282px;
+	text-align      : left;
+	top             : -55px;
+	background-color: white;
+	border-radius   : 0 0 20px 20px;
+	display         : flex;
+	font-weight     : bold;
+	color           : black;
+	padding-left    : 20px;
+	align-content   : center;
+	justify-content : flex-start;
+	align-items     : center;
 }
 
 .acti_card_1 {
@@ -523,10 +573,47 @@ a>p {
 
 
 footer {
-	margin-top: 15px;
+	display         : flex;
+	margin-top      : 15px;
+	height          : 218px;
+	background-color: #f2f2f2;
+	flex-direction  : row;
+	padding-left    : 40px;
+	flex-wrap       : nowrap;
+	align-items     : flex-start;
+	width           : 100%;
+	color           : black;
+	font-size       : 1.2rem;
+	justify-content : flex-start;
 }
 
+.footer_card1,
+.footer_card2,
+.footer_card3 {
+	display       : flex;
+	flex-direction: column;
+	align-content : flex-start;
+	align-items   : flex-start;
+	color         : black;
+}
 
+.footer_card2 {
+	margin-left : 227px;
+	margin-right: 296px;
+}
+
+footer a {
+	text-decoration: none;
+	color          : black;
+	font-size      : 0.9rem;
+	padding-bottom : 19px;
+}
+
+h5 {
+	margin-top   : 49px;
+	font-size    : 1rem;
+	margin-bottom: 23px;
+}
 
 @media screen and (max-width: 1024px) {
 	#hebergement {
