@@ -32,13 +32,13 @@
     </header>
     <!--                       MAIN FORM                       -->
     <main>
-        <div class="titre_main">
+        <!-- div de reglage de la marge en responsive -->
+        <div class="titre_main"> 
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
-
+                            <!-- barre de recherche -->
             <form method="POST" action="#">
-
                 <div class="searchbar">
                     <label for="city"><i class="fas fa-map-marker-alt"></i></label>
                     <input type="text" name="city" id="city" maxlength="20" placeholder="Marseille,France" />
@@ -47,7 +47,7 @@
                         <span class="font_search">Rechercher</span>
                     </button>
                 </div>
-
+                            <!-- filtres + effets hover -->
                 <div class="filtres">
                     <h5 class="titre_filtres">Filtres</h5>
                     <div>
@@ -83,8 +83,8 @@
         </div>
         </div>
         <article>
+ <!-- 2 sections et 1 aside dans l'article. l'article est en flex box pour ces 3 balises. -->
             <!--                 HEBERGEMENT                   -->
-
             <section id="hebergements">
                 <div class="titre_hebergement">
                     <h2>Hébergements à Marseille</h2>
@@ -148,8 +148,8 @@
                     <span class="bold">afficher plus</span>
                 </div>
             </section>
-            <!--           ASIDE            POPULAIRE                  -->
 
+            <!--           ASIDE            POPULAIRE                  -->
             <aside id="populaires">
                 <div class="start_end">
                     <h3>Les plus populaires</h3>
@@ -230,7 +230,8 @@
             </section>
         </article>
     </main>
-
+            <!-- reglage du footer en flex box sur 2 niveaux.
+            1 pour le container et un autre pour les cards -->
     <footer>
         <div class="footer_card1">
             <h5>A propos</h5>
