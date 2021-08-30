@@ -7,6 +7,10 @@
 	font-weight: 500;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	width      : 100%;
 	font-family: 'Raleway', Arial, sans-serif;
@@ -40,7 +44,7 @@ main {
 }
 
 #logo img {
-	
+
 	width     : 6rem;
 	box-sizing: content-box;
 	object-fit: cover;
@@ -82,7 +86,7 @@ body header nav div a {
 	border-top     : 2px solid #FFFFFF;
 	font-size      : 1.2rem;
 	text-decoration: none;
-	color: black;
+	color          : black;
 }
 
 header nav div a:hover {
@@ -96,7 +100,9 @@ h1 {
 	font-weight: bold;
 }
 
-h2,h3,h4 {
+h2,
+h3,
+h4 {
 	font-family: 'Raleway';
 	font-size  : 1.4rem;
 	font-weight: bold;
@@ -169,20 +175,22 @@ button i.fa-search {
 .font_search {
 	font-weight: bold;
 }
+
 button {
 	padding-left: 0px;
 }
+
 .but_search {
-	font-family: "Raleway";
-    font-size: 1.1rem;
-    width: 134px;
-    min-width: 40px;
-    border-style: initial;
-    border-radius: 0 15px 15px 0;
-    background-color: #0065FC;
-    color: #FFFFFF;
-    position: relative;
-    left: -12px;
+	font-family     : "Raleway";
+	font-size       : 1.1rem;
+	width           : 134px;
+	min-width       : 40px;
+	border-style    : initial;
+	border-radius   : 0 15px 15px 0;
+	background-color: #0065FC;
+	color           : #FFFFFF;
+	position        : relative;
+	left            : -12px;
 }
 
 .but_search:hover {
@@ -203,13 +211,13 @@ button {
 }
 
 input#city {
-	border: #F2F2F2 solid 2px;
-    border-right: #FFFFFF solid 2px;
-    padding-left: 10px;
-    font-size: 1.1em;
-    font-weight: bold;
-    display: inline-block;
-    width: 14rem;
+	border      : #F2F2F2 solid 2px;
+	border-right: #FFFFFF solid 2px;
+	padding-left: 10px;
+	font-size   : 1.1em;
+	font-weight : bold;
+	display     : inline-block;
+	width       : 14rem;
 }
 
 input#city:focus,
@@ -335,7 +343,7 @@ article {
 	align-content   : space-around;
 	align-items     : center;
 	justify-content : space-around;
-	color: black;
+	color           : black;
 }
 
 .heb_card {
@@ -476,12 +484,12 @@ article {
 }
 
 aside>a>img {
-	box-sizing     : content-box;
-	width          : 9.9em;
-	margin         : 0 1em 0 0;
-	border-radius  : 20px 0 0 20px;
-	object-fit     : cover;
-	transition     : 0.4s;
+	box-sizing   : content-box;
+	width        : 9.9em;
+	margin       : 0 1em 0 0;
+	border-radius: 20px 0 0 20px;
+	object-fit   : cover;
+	transition   : 0.4s;
 }
 
 aside>a:hover img {
@@ -653,9 +661,10 @@ footer a {
 	main {
 		width: 100%;
 	}
-					/* 1er niveau de padding de la class .titre_main */
+
+	/* 1er niveau de padding de la class .titre_main */
 	.titre_main {
-		padding: 0 1rem ;
+		padding: 0 1rem;
 	}
 
 	footer {
@@ -716,9 +725,9 @@ footer a {
 	}
 
 	.multi_size_box a {
-		height   : 190px;
-		width    : 27%;
-		margin   : 1em auto;
+		height: 190px;
+		width : 27%;
+		margin: 1em auto;
 	}
 }
 
@@ -830,7 +839,7 @@ footer a {
 	.p_info {
 		padding: 0 1em;
 	}
-	
+
 	button i.fa-search {
 		display: block;
 		color  : #FFFFFF;
@@ -882,9 +891,9 @@ footer a {
 
 @media screen and (max-width: 475px) {
 
-		/* deuxieme niveau de reglage du padding de la classe .titre_main */
-		/* mais ce la ne marche pas ! ! ! !  */
-		/* pb resolut, je n'avais pas mis d'echelle de valeur à mon media queries */
+	/* deuxieme niveau de reglage du padding de la classe .titre_main */
+	/* mais ce la ne marche pas ! ! ! !  */
+	/* pb resolut, je n'avais pas mis d'echelle de valeur à mon media queries */
 
 	.titre_main {
 		padding: 0 0.5rem;
