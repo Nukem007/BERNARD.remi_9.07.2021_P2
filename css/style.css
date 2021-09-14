@@ -617,8 +617,6 @@ footer {
 	display         : flex;
 	background-color: #f2f2f2;
 	flex-direction  : row;
-	/* padding-left : 16%; */
-	/* padding-right: 20%; */
 	flex-wrap       : nowrap;
 	color           : black;
 	font-size       : 1.2rem;
@@ -719,7 +717,7 @@ footer a {
 		display        : flex;
 		flex-direction : row;
 		flex-wrap      : wrap;
-		height         : fit-content;
+		height         : max-content;
 		align-content  : flex-start;
 		justify-content: center;
 	}
