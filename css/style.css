@@ -1,10 +1,10 @@
 @font-face {
-	font-family: 'Raleway', Arial, sans-serif;
+	font-family   : 'Raleway', Arial, sans-serif;
 	/* src        : url('Raleway-VariableFont_wght.ttf') format('truetype'),
 		url('Raleway-Italic-VariableFont_wght.ttf') format('truetype'); */
-	font-weight: normal;
-	font-style : normal;
-	font-weight: 500;
+	font-weight   : normal;
+	font-style    : normal;
+	font-weight   : 500;
 }
 
 html {
@@ -195,7 +195,7 @@ button {
 
 .but_search:hover {
 	background-color: #DEEBFF;
-	color: #0065FC;
+	color           : #0065FC;
 }
 
 .searchbar label {
@@ -375,11 +375,9 @@ article {
 #populaires {
 	display         : flex;
 	background-color: #f2f2f2;
-	/* margin       : 0 auto 0 auto; */
 	padding         : 1em;
 	border-radius   : 20px;
 	width           : 30%;
-	/* height       : max-content; */
 	flex-direction  : column;
 	align-content   : center;
 	align-items     : center;
@@ -577,8 +575,6 @@ a>p {
 #activites p {
 	height          : 55px;
 	position        : relative;
-	/* width        : 282px; */
-	/* text-align   : left; */
 	top             : -57px;
 	background-color: white;
 	border-radius   : 0 0 20px 20px;
